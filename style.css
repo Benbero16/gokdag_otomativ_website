@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #6c757d;
+    --accent-color: #adb5bd;
+    --bg-light: #f8f9fa;
+    --bg-dark: #212529;
+    --text-light: #212529;
+    --text-dark: #f8f9fa;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #343a40;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-light);
+    background-color: var(--bg-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+    /* Backup for some browsers */
+}
+
+#services,
+#appointment,
+#contact {
+    scroll-margin-top: 150px;
+}
+
+[data-theme="dark"] body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: rgba(52, 58, 64, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+[data-theme="dark"] .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-brand img {
+    height: 120px;
+    width: auto;
+    transition: height 0.3s;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    /* Add depth to logo */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 100px;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+}
+
+/* Services Cards */
+.service-card {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--card-bg-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+[data-theme="dark"] .service-card {
+    background-color: var(--card-bg-dark);
+    color: var(--text-dark);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+[data-theme="dark"] .service-icon {
+    color: #ced4da;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 40px 0;
+}
+
+[data-theme="dark"] footer {
+    background-color: #1a1e21;
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary-custom:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+[data-theme="dark"] .btn-primary-custom {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+[data-theme="dark"] .btn-primary-custom:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Utilities */
+.text-grey {
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] .text-grey {
+    color: #adb5bd;
+}

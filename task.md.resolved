@@ -1,0 +1,23 @@
+# Gökdağ Otomotiv - Project Tasks
+
+## Project Rules & Constraints (Critical)
+- [ ] **Code Quality**: Clean, understandable, and scalable code.
+- [ ] **Framework**: Bootstrap 5 (Optimized usage).
+- [ ] **Design**: Grey tones color palette.
+- [ ] **Theme**: Light/Dark mode toggle.
+- [ ] **Responsiveness**: Fully responsive design (Mobile-first approach).
+- [ ] **Reversibility**: All changes must be easily reversible (git/backup strategy).
+- [ ] **Methodology**: Step-by-step verification.
+
+## Phase 1: Setup & Planning
+- [x] Initialize Git repository for version control (Reversibility).
+- [x] Set up basic directory structure.
+- [ ] Create [implementation_plan.md](file:///C:/Users/berat%20yi%C4%9Fit/.gemini/antigravity/brain/2f9244de-a5e7-4e75-a11d-b08ebbadfc5b/implementation_plan.md) for architectural overview.
+- [/] Await user template (if provided) or detailed design instructions.
+
+## Phase 2: Implementation (Pending)
+- [ ] Setup Bootstrap environment.
+- [ ] Implement Theme Switcher (Dark/Light).
+- [ ] Build Header/Navigation.
+- [ ] Build Hero Section.
+- [ ] Build Footer.
