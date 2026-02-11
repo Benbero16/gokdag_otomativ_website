@@ -77,14 +77,50 @@ html {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
-    padding: 80px 0;
+    background-image: url('assets/img/dukkan.jpeg');
+    background-size: 100%;
+    /* Changed from 'cover' to '100%' to match width and reduce zoomed-in feeling */
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    /* Center the image */
+    padding: 100px 0;
+    /* Increased padding slightly for better ratio */
     position: relative;
     overflow: hidden;
+    z-index: 1;
+    /* Ensure content stacks above pseudo-element */
 }
 
+/* Overlay for text readability - Light Mode (White Overlay) */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Further reduced opacity (more transparent) */
+    z-index: -1;
+    /* Behind the content */
+    transition: background-color 0.3s ease;
+}
+
+/* Explicitly set text color to white in Dark Mode to ensure visibility on dark overlay */
 [data-theme="dark"] .hero-section {
-    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+    color: #ffffff;
+}
+
+/* Also ensure headings inside hero section are white in Dark Mode */
+[data-theme="dark"] .hero-section h1,
+[data-theme="dark"] .hero-section p {
+    color: #ffffff !important;
+}
+
+/* Overlay for text readability - Dark Mode (Dark Overlay) */
+[data-theme="dark"] .hero-section::before {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Reduced opacity for better visibility */
 }
 
 /* Services Cards */

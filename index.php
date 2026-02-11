@@ -4,7 +4,7 @@
 <section class="hero-section text-center d-flex align-items-center justify-content-center">
     <div class="container position-relative z-1">
         <h1 class="display-3 fw-bold mb-3">Gökdağ Otomotiv</h1>
-        <p class="lead mb-4 text-grey">Profesyonel bakım, onarım ve garanti hizmetleri ile aracınız emin ellerde.</p>
+        <p class="lead mb-4">Profesyonel bakım, onarım ve garanti hizmetleri ile aracınız emin ellerde.</p>
         <a href="#appointment" class="btn btn-primary-custom btn-lg px-5 py-3 rounded-pill fw-bold shadow-sm">Hemen Randevu Al</a>
     </div>
 </section>
